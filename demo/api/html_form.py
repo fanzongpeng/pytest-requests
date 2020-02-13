@@ -2,7 +2,6 @@ from pytest_requests import HttpRequest
 
 
 class ApiHttpBinPostHtmlForm(HttpRequest):
-
     method = HttpRequest.EnumHttpMethod.POST
     url = "http://httpbin.org/post"
     headers = {
@@ -12,7 +11,6 @@ class ApiHttpBinPostHtmlForm(HttpRequest):
 
 
 class ApiHttpBinPostJson(HttpRequest):
-
     method = HttpRequest.EnumHttpMethod.POST
     url = "http://httpbin.org/post"
     headers = {
@@ -20,14 +18,14 @@ class ApiHttpBinPostJson(HttpRequest):
         "accept": "application/json"
     }
     body = {
-		"comments": "hello world",
-		"custemail": "m@test.com",
-		"custname": "{custname}",
-		"custtel": "{custtel}",
-		"delivery": "14:30",
-		"size": "small",
-		"topping": [
-			"cheese",
-			"mushroom"
+        "comments": "hello world",
+        "custemail": "m@test.com",
+        "custname": "{custname}",
+        "custtel": "{custtel}",
+        "delivery": "14:30",
+        "size": "small",
+        "topping": [
+            "cheese",
+            "mushroom"
         ]
-	}
+    }
